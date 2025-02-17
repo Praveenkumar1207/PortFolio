@@ -26,7 +26,8 @@ const Contact = () => {
       [name]: value,
     });
   };
-  console.log("My form ame is " + form.email); 
+  // console.log("Email Data:", form.email);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
