@@ -42,16 +42,12 @@ const About = () => {
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
-
       <motion.p
   variants={fadeIn("", "", 0.1, 1)}
   className="mt-4 text-secondary text-[17px] leading-[30px] mx-auto"
   style={{ textAlign: 'justify', width: '80%' }}
 >
 I'm a skilled software developer with expertise in JavaScript, React, Node.js, and MongoDB. I have experience building responsive, user-friendly web applications and optimizing performance for seamless user experiences. With a strong foundation in data structures, algorithms, and databases, I create scalable and efficient solutions. I’ve developed real-time dashboards, automated systems, and event management platforms, collaborating closely with teams to bring innovative ideas to life. Let’s work together to turn your vision into reality!</motion.p>
-
-
-
       <div className='mt-20 flex flex-wrap gap-10'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
